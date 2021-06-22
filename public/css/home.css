@@ -1,0 +1,135 @@
+.home{
+    background-color:#ebebeb;
+}
+.home header{
+    background-color: var(--color-amarillo);
+}
+/*search*/
+.home img#img-logo{
+    width: 150px;
+    margin: 30px;
+}
+.home input{
+    display: block;
+    color: var(--color-gris-claro);
+}
+.home #input{
+    margin-left: 20px;
+}
+/*promo*/
+.home #promo{
+    text-align: center;
+    margin: 15px 0;
+    font-weight: 800;
+}
+/*menu*/
+.home nav ul{
+    margin-bottom: 20px;
+}
+.home nav li{
+    list-style: none;
+}
+.home nav li a{
+    color: black;
+    font-weight: 600;
+}
+.home .burger-menu {
+  display: flex;
+  justify-content: center;
+}
+.home .burger-menu i{
+   width: 15px;
+   padding: 10px;
+   margin-bottom: 20px;
+   color: white;
+   background-color: var(--color-celeste);
+}
+.home h3{
+    font-size: 24px;
+    
+}
+.home p{
+    font-size: 12px;
+}
+.home .precio{
+    font-size: 18px;
+}
+.home .descuentos{
+    font-size: 16px;
+}
+.home main .detail-product h4{
+    font-size: 16px;
+}
+
+/*footer*/
+.home footer article{
+   text-align: center;
+   margin: 30px;
+   color: var(--color-azul);
+}
+
+.home footer p {
+    color: var(--color-azul);
+}
+
+.home footer article i{
+    color: var(--color-celeste);
+    width: 2em;
+    margin-bottom: 10px;
+}
+
+/*version 3*/
+
+.home main{
+    margin: 5%; /*centro la imagen*/
+    width: 90%; /*defino el ancho*/
+}
+
+.home main article{
+    margin-bottom: 10px;
+    background-color: white;
+}
+.home main article .detail-product{
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    
+}
+/* ocultar login, site y descripcion de producto*/
+.home main .detail-product h4, .home nav ul{
+    display: none;
+}
+
+
+
+/*tablet*/
+@media (min-width:361px){
+   /* Mostrar login, site y descripcion de producto*/
+    .home main .detail-product h4, .home nav ul{
+        display:block;
+    }
+    .home .burger-menu i{
+        display: none;
+    }
+ /*products*/
+    .home main article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
+
+/*considero el punto de corte siguiente innecesario ya 
+que desptok tiene las mismas caracteristicas que tablet.
+Lo agrego porque asi lo dice el pdf.
+/*desptok*/
+@media (min-width:769px){
+     /* Mostrar login, site y descripcion de producto*/
+     .home main .detail-product h4, .home nav ul{
+        display:block;
+    }
+    .home .burger-menu i{
+        display: none;
+    }
+    /*products*/
+    .home main article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
